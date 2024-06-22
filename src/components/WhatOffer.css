@@ -1,0 +1,168 @@
+.offer-component {
+   
+   background-color: #ffffff;
+   padding: 40px;
+   border-radius: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   font-family: "Nunito Sans", sans-serif;
+   color: #111;
+}
+
+.offer-header {
+   text-align: center;
+   margin-bottom: 20px;
+}
+
+.offer-header h2 {
+   font-size: 34px;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+.offer-subheader {
+   text-align: center;
+   margin-bottom: 30px;
+   color: #464646;
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: capitalize;
+}
+
+.offer-content {
+   display: flex;
+   margin-top: 60px;
+}
+
+.offer-left,
+.offer-left-2 {
+   width: 556px;
+   height: 240px;
+   flex-shrink: 0;
+   border-radius: 45px 0 0 45px;
+   background-color: #9bd6db;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.offer-left-2 {
+   border-radius: 0 45px 45px 0;
+}
+
+.offer-left-header {
+   color: #565656;
+   font-size: 38px;
+   font-weight: 700;
+   text-transform: capitalize;
+   text-align: center;
+}
+
+.offer-right,
+.offer-right-2 {
+   width: 443px;
+   height: 240px;
+   flex-shrink: 0;
+   border-radius: 0 45px 45px 0;
+   border: 1px solid #9bd6db;
+   background-color: #ffffff;
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+}
+
+.offer-right-2 {
+   border-radius: 45px 0 0 45px;
+}
+
+.offer-right-header {
+   color: #111;
+   font-size: 24px;
+   font-weight: 400;
+   line-height: normal;
+   margin-bottom: 10px;
+}
+
+.offer-right-description {
+   color: #464646;
+   font-size: 16px;
+   font-weight: 400;
+   line-height: normal;
+}
+
+.know-more-button {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+.know-more-btn {
+   width: 187px;
+   height: 48px;
+   background-color: #9bd6db;
+   border: 1px solid #9bd6db;
+   border-radius: 24px 0 24px 0;
+   color: #0a0a0a;
+   font-size: 18px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.know-more-btn:hover {
+   background-color: #ffffff;
+   color: #010101;
+   border-color: #0aced1;
+   border-width: 2px;
+}
+
+.arrow-icon {
+   margin-left: 8px;
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 768px) { /* Mobile */
+   .offer-content {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .offer-left,
+   .offer-left-2,
+   .offer-right,
+   .offer-right-2 {
+       width: 100%;
+       height: auto;
+       border-radius: 20px;
+       margin-bottom: 20px;
+       padding: 20px;
+   }
+
+   .offer-left-header,
+   .offer-right-header {
+       font-size: 24px;
+   }
+
+   .offer-right-description {
+       font-size: 14px;
+   }
+
+   /* Specific styling for Box 2 */
+   .offer-content:nth-child(2) {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .offer-left-2 {
+       margin-bottom: 20px;
+       border-radius: 20px 20px 0 0;
+   }
+
+   .offer-right-2 {
+       border-radius: 0 0 20px 20px;
+       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+}

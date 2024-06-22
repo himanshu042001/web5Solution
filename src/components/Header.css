@@ -1,0 +1,224 @@
+.header-container {
+   max-width: 1440px;
+   height: 400px;
+   background: #060606;
+   display: flex;
+   align-items: center;
+   padding: 20px;
+   box-sizing: border-box;
+
+}
+
+.header-left {
+   width: 535px;
+   height: 277px;
+   display: flex;
+   flex-direction: column;
+}
+
+.header-title h1 {
+   color: #FFF;
+   font-family: "Nunito Sans";
+   font-size: 34px;
+   font-weight: 600;
+   line-height: normal;
+   text-transform: capitalize;
+   margin: 0;
+}
+
+.header-highlight {
+   display: flex;
+   align-items: center;
+   margin-top: 10px;
+   height: 60px;
+   overflow: hidden;
+   position: relative;
+}
+
+.header-in {
+   color: #FFF;
+   font-family: "Nunito Sans";
+   font-size: 48px;
+   font-weight: 900;
+   line-height: normal;
+   text-transform: capitalize;
+   margin-right: 20px; /* Add space between 'In' and the animated text */
+}
+
+.header-highlight-text {
+   background: linear-gradient(90deg, #9BD6DB 0%, #21929B 100%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   font-family: "Nunito Sans";
+   font-size: 48px;
+   font-weight: 900;
+   line-height: normal;
+   animation: slideUp 3s infinite;
+   position: absolute;
+   left: 60px; /* Add space between 'In' and the animated text */
+}
+
+@keyframes slideUp {
+   0%, 20% {
+       transform: translateY(0);
+       opacity: 1;
+   }
+   30%, 70% {
+       transform: translateY(-100%);
+       opacity: 0;
+   }
+   80%, 100% {
+       transform: translateY(0);
+       opacity: 1;
+   }
+}
+
+.header-description p {
+   width: 464px;
+   color: #FFF;
+   font-family: "Nunito Sans";
+   font-size: 20px;
+   font-weight: 300;
+   line-height: normal;
+   margin: 5px 0;
+}
+
+.contact-button {
+   margin-top: 20px; /* Adjust this value to control the space between the text and the button */
+}
+
+.contact-btn {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 187px;
+   height: 48px;
+   background-color: #9BD6DB;
+   color: #060606;
+   border: none;
+   border-radius: 24px 0 24px 0;
+   font-family: "Nunito Sans";
+   font-size: 16px;
+   font-weight: 600;
+   cursor: pointer;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-btn:hover {
+   background-color: #ffffff;
+   border: 2px solid #02b7c8;
+   color: #060606;
+}
+
+.arrow-icon {
+   margin-left: 8px;
+}
+
+body {
+   margin: 0;
+   padding: 0;
+   font-family: "Nunito Sans", sans-serif;
+   background-color: #f0f0f0;
+}
+
+.container {
+   padding-top: 50px; /* Add space above the header */
+}
+
+.content {
+   height: 2000px; /* Add height to the content to make sure there's enough content to scroll */
+}
+
+/* Media Queries for responsiveness */
+
+@media (max-width: 1024px) { /* Tablet */
+   .header-container {
+       height: auto;
+       padding: 15px;
+       margin: 20px auto;
+   }
+
+   .header-left {
+       width: 100%;
+       height: auto;
+   }
+
+   .header-title h1 {
+       font-size: 28px;
+   }
+
+   .header-highlight {
+       flex-direction: column;
+       align-items: flex-start;
+       height: auto;
+   }
+
+   .header-in, .header-highlight-text {
+       font-size: 36px;
+   }
+
+   .header-highlight-text {
+       position: relative;
+       left: 0;
+       margin-top: 10px;
+   }
+
+   .header-description p {
+       width: 100%;
+       font-size: 18px;
+   }
+
+   .contact-btn {
+       width: 150px;
+       height: 40px;
+       font-size: 14px;
+   }
+}
+
+@media (max-width: 768px) { /* Mobile */
+   .header-container {
+       flex-direction: column;
+       padding: 10px;
+       margin: 10px auto;
+   }
+
+   .header-left {
+       width: 100%;
+       height: auto;
+       align-items: center;
+   }
+
+   .header-title h1 {
+       font-size: 24px;
+       text-align: center;
+   }
+
+   .header-highlight {
+       flex-direction: column;
+       align-items: center;
+       height: auto;
+       margin-top: 5px;
+   }
+
+   .header-in, .header-highlight-text {
+       font-size: 28px;
+   }
+
+   .header-highlight-text {
+       position: relative;
+       left: 0;
+       margin-top: 10px;
+   }
+
+   .header-description p {
+       width: 100%;
+       font-size: 16px;
+       text-align: center;
+   }
+
+   .contact-btn {
+       width: 130px;
+       height: 36px;
+       font-size: 12px;
+   }
+}

@@ -1,0 +1,61 @@
+.services {
+   padding: 20px;
+}
+
+.services h2 {
+   font-size: 1.5em;
+   margin-bottom: 20px;
+   color: #000;
+}
+
+.service-buttons {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+   gap: 10px;
+}
+
+.service-buttons button {
+   padding: 10px 20px;
+   font-size: 1em;
+   background: #f7f7f7;
+   color: #000;
+   cursor: pointer;
+   transition: background 0.3s, box-shadow 0.3s;
+   border-radius: 5px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   border: none;
+}
+
+.service-buttons button:hover {
+   background-color: #e0e0e0;
+   box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.arrow-button {
+   background: #d3d3d3;
+   border: none;
+   cursor: pointer;
+   display: flex;
+   align-items: center;
+   border-radius: 5px;
+   padding: 10px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-button svg {
+   width: 1.5em;
+   height: 1.5em;
+   transition: transform 0.3s;
+   color: #000;
+}
+
+.arrow-button:hover svg {
+   transform: scale(1.1);
+}
+
+@media (max-width: 600px) {
+   .service-buttons {
+       flex-direction: column;
+   }
+}

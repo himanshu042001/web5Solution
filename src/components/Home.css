@@ -1,0 +1,136 @@
+.header {
+   background-color: #1a1a1a;
+   color: white;
+   padding: 20px 0;
+   width: 100%;
+   text-align: center;
+   display: flex;
+}
+
+.header-content {
+   max-width: 1200px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.header-left {
+   flex: 1;
+   text-align: left;
+   padding-right: 20px; /* Add some padding for separation */
+}
+
+.header-right {
+   flex: 1;
+   background-color: #1a1a1a; /* Dark black background */
+}
+
+.header-line1 {
+   font-size: 2.5em;
+   font-weight: bold;
+   margin-bottom: 10px;
+}
+
+.header-line2 {
+   font-size: 1.8em;
+   margin-bottom: 10px;
+}
+
+.animated-text {
+   display: inline-block;
+   overflow: hidden;
+   white-space: nowrap;
+}
+
+.animated-text span {
+   display: inline-block;
+   animation: slide-in 8s infinite;
+}
+
+@keyframes slide-in {
+   0% {
+       transform: translateX(100%);
+       opacity: 0;
+   }
+   10% {
+       transform: translateX(0%);
+       opacity: 1;
+   }
+   90% {
+       transform: translateX(0%);
+       opacity: 1;
+   }
+   100% {
+       transform: translateX(-100%);
+       opacity: 0;
+   }
+}
+
+.header-line2 span {
+   color: #E2E2E2;
+}
+
+.header-line3 {
+   font-size: 1.2em;
+   margin-bottom: 10px;
+}
+
+.header-line4 {
+   font-size: 0.9em;
+   margin-bottom: 20px;
+}
+
+.contact-button {
+   display: inline-block;
+   background-color: lightseagreen;
+   color: white;
+   text-decoration: none;
+   padding: 10px 20px;
+   border-radius: 30px;
+   font-size: 1.2em;
+   transition: background-color 0.3s;
+}
+
+.contact-button:hover {
+   background-color: #007b5e;
+}
+
+.arrow-icon {
+   margin-left: 5px;
+   vertical-align: middle;
+   transition: transform 0.3s;
+}
+
+.contact-button:hover .arrow-icon {
+   transform: translateX(3px);
+}
+
+@media (max-width: 768px) {
+   .header-content {
+       flex-direction: column;
+       text-align: center;
+   }
+
+   .header-left, .header-right {
+       flex: none;
+       width: 100%;
+       padding: 0;
+   }
+
+   .header-line1 {
+       font-size: 2em;
+   }
+
+   .header-line2 {
+       font-size: 1.5em;
+   }
+
+   .header-line3 {
+       font-size: 1em;
+   }
+
+   .header-line4 {
+       font-size: 0.8em;
+   }
+}
